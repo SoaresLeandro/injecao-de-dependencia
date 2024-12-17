@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dependencyinjection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+014a3f122fc3f77103279b783c2568796a213c8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a920c977d36a6d9d8b76918bc17c0b9d7ae9a61")]
 [assembly: System.Reflection.AssemblyProductAttribute("dependencyinjection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dependencyinjection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

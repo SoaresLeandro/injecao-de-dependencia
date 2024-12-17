@@ -1,0 +1,8 @@
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.csproj.AssemblyReference.cache
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.AssemblyInfoInputs.cache
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.AssemblyInfo.cs
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.csproj.CoreCompileInputs.cache
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lsilva\Documents\Leandro\lab_leandro\dominando-injecao-dependencia\dependencyinjection\obj\Debug\net9.0\dependencyinjection.sourcelink.json
