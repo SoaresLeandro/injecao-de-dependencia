@@ -8,7 +8,7 @@ namespace dependencyinjection.Repositories;
 public class CustomerRepository : ICustomerRepository
 {
     private SqlConnection _sqlConnection;
-
+        
     public CustomerRepository(SqlConnection sqlConnection) => _sqlConnection = sqlConnection;
 
     public async Task<Customer?> GetByIdAsync(string customerId)
