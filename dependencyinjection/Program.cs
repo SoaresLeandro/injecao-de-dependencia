@@ -1,7 +1,5 @@
-using dependencyinjection.Repositories;
-using dependencyinjection.Repositories.Contracts;
+using dependencyinjection;
 using dependencyinjection.Services;
-using dependencyinjection.Services.Contracts;
 using Microsoft.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,10 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<Configuration>();
-builder.Services.AddScoped<SqlConnection>();
-builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
-builder.Services.AddTransient<IPromoCodeRepository, PromoCodeRepository>();
-builder.Services.AddTransient<IDeliveryFeeService, DeliveryFeeService>();
+builder.Services.AddSqlConnection(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddRepositories();
+builder.Services.AddServices();
 
 builder.Services.AddControllers();
 
