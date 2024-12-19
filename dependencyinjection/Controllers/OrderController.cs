@@ -1,3 +1,4 @@
+using dependencyinjection.Models;
 using dependencyinjection.Repositories.Contracts;
 using dependencyinjection.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
@@ -22,14 +23,15 @@ public class OrderController : ControllerBase
     public async Task<IActionResult> Place(string customerId, string zipCode, string promoCode)
     {
         var customer = await _customerRepository.GetByIdAsync(customerId);
-
-        var deliveryFee = await _deliveryFeeService.GetDeliveryFeeAsync(zipCode);
-
-        var cupon = await _promoCodeRepository.GetPromoCodeAsyc(promoCode);
-
         if(customer is null)
             return NotFound();
 
-        return Ok();
+        var deliveryFee = await _deliveryFeeService.GetDeliveryFeeAsync(zipCode);
+        var cupon = await _promoCodeRepository.GetPromoCodeAsyc(promoCode);
+        var discount = cupon?.Value ?? 0;
+        var order = new Order(deliveryFee, discount, new List<Product>());
+
+        var mensagem = $"Pediddo {order.Code} gerado com sucesso!";
+        return Ok(mensagem);
     }
 }
